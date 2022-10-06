@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1df54ca4.css",
+    "main.js": "/portfolio/static/js/main.74daacb6.js",
+    "static/media/dylanhero.JPG": "/portfolio/static/media/dylanhero.69b57290636c658c59bb.JPG",
+    "static/media/camping.png": "/portfolio/static/media/camping.39b16a49e9ab81f24359.png",
+    "static/media/spaceBearsGame.png": "/portfolio/static/media/spaceBearsGame.b7c5a3087a5e8dfd6d73.png",
+    "static/media/spooked.png": "/portfolio/static/media/spooked.16bb04a2e3682fffa44f.png",
+    "static/media/selfie.jpg": "/portfolio/static/media/selfie.a0f917c34ad276dcbe39.jpg",
+    "static/media/idbf.jpg": "/portfolio/static/media/idbf.37ee2eabb6749dd3fe77.jpg",
+    "static/media/spacebears.png": "/portfolio/static/media/spacebears.9ffd4750d6a4ecb78aa2.png",
+    "static/media/tinycade.jpg": "/portfolio/static/media/tinycade.ddb2bd6b6b9a65a32537.jpg",
+    "static/media/comingSoon.jpg": "/portfolio/static/media/comingSoon.a1f07627f79a087dbcd1.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.1df54ca4.css.map": "/portfolio/static/css/main.1df54ca4.css.map",
+    "main.74daacb6.js.map": "/portfolio/static/js/main.74daacb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1df54ca4.css",
+    "static/js/main.74daacb6.js"
+  ]
+}
