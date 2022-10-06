@@ -1,0 +1,41 @@
+.about-content
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.about p
+{
+    text-align: center;
+    color: #111;
+    font-size: 1.1rem;
+    font-family: var(--secondary-font);
+    /* margin-top: -20px; */
+}
+
+.content-side
+{
+    max-width: 650px;
+}
+
+.content-side h3
+{
+    font-size: 1.2rem;
+    font-family: var(--secondary-font);
+}
+.content-side p
+{
+    font-size: 1.1rem;
+    font-family: var(--secondary-font);
+    font-weight: 200;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
+.image-side
+{
+    order: 1;
+    margin-bottom: 20px;
+}

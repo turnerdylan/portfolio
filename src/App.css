@@ -36,3 +36,397 @@
     transform: rotate(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,800;1,400&family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Global styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Crimson Text', serif;
+    --secondary-font: 'Nunito', sans-serif;
+}
+
+hr
+{
+    color: #fff;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    padding-bottom: 5px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header.sticky
+{
+    background: #fff;
+    padding: 20px 100px;
+}
+
+header .logo, .logo a
+{
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+header.sticky .logo
+{
+    color: #111;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+header ul li, header ul li a
+{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header.sticky ul li a
+{
+    color: #111;
+}
+
+section
+{
+    padding: 60px;
+}
+
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url('./assets/img/dylanhero.JPG');
+    background-size: cover;
+    background-position: top left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner::after
+{
+  content: '';
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+
+.banner h2
+{
+    color: #fff;
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 10px 0;
+}
+
+.banner h2 span
+{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.banner h6
+{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: var(--secondary-font);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.btn, .btn a
+{
+    color: #fff;
+    background-color: #0097e6;
+    box-shadow: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    margin: 16px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0097e6;
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+    font-weight: 800;
+}
+
+
+
+
+
+.btn-resume
+{
+    margin-top: 30px;
+}
+
+.my-img
+{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-button {
+    width: 400px;
+    height: auto;
+}
+
+.modal-image {
+    width: 600px;
+    height: auto;
+}
+
+/* -------------------------------Copyright------------------------------- */
+.copyright
+{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright p
+{
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: var(--secondary-font);
+}
+
+/* ----------------------- Responsive ------------------------------------ */
+@media (max-width: 991px)
+{
+    /* Experiment */
+    /* header
+    {
+        background-color: #fff;
+    }
+
+    header .logo
+    {
+        color: #000;
+    } */
+    /* Experiment */
+
+    section
+    {
+        padding: 30px 20px;
+    }
+
+    header.sticky .toggle
+    {
+        filter: invert(1);
+    }
+
+    header, header.sticky
+    {
+        padding: 10px 50px;
+        /* z-index: 1000; */
+    }
+
+    .menu
+    {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid #dfe4ea;
+    }
+
+    .menu.active
+    {
+        left: 0;
+    }
+
+    .menu li
+    {
+        display: block;
+    }
+
+    .header ul li, header ul li a
+    {
+        color: #111;
+        font-size: 1.2rem;
+        margin: 10px;
+        text-transform: uppercase;
+    }
+    .toggle
+    {
+        width: 40px;
+        height: 40px;
+        background: url(./assets/img/menu.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .toggle.active
+    {
+        background: url('./assets/img/close.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .banner
+    {
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2 span
+    {
+        font-size: 2rem;
+    }
+
+    .banner h6
+    {
+        font-size: 0.8rem;
+    }
+
+    .heading, .contact .heading
+    {
+        font-size: 2rem;
+    }
+
+    .btn, .btn a
+    {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 5px 10px;
+    }
+
+    .about-content
+    {
+        flex-direction: column;
+    }
+
+    .content-side
+    {
+        order: 2;
+    }
+
+
+
+    .service-contents
+    {
+        flex-direction: column;
+    }
+
+    .service-content
+    {
+        max-width: 100%;
+    }
+
+    .contact-info
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px)
+{
+    header, header.sticky
+    {
+        padding: 20px 20px;
+    }
+
+    .banner
+    {
+        padding: 150px 20px 100px;
+    }
+}
+
+@media screen and (max-width: 960px)
+{
+	.work-section .image{
+		flex: 33.33%;
+    }
+    
+    .testimonial-col
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+	.work-section .image{
+		flex: 50%;
+	}
+}
+
+@media screen and (max-width: 480px)
+{
+	.work-section .image{
+		flex: 100%;
+	}
+}
+
+/* for Service icon */
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+}

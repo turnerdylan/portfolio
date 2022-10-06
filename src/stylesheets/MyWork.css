@@ -1,0 +1,40 @@
+.work p
+{
+    text-align: center;
+    color: #111;
+    font-size: 1.1rem;
+    font-family: var(--secondary-font);
+    /* margin-top: -20px; */
+}
+
+.work-section .work
+{
+	display: flex;
+	flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.work-section .image
+{
+	flex: 25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.work-section .image img
+{
+	width: 25rem;
+    height: 15rem;
+	transition: 0.4s;
+    z-index: 0;
+}
+
+.work-section h5
+{
+    text-align: center;
+}
+
+.work-section .image:hover img
+{
+	transform: scale(1.2);
+}
